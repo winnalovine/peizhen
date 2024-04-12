@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 32rpx;
+    background-color: #f6f6f6;
+  }
+  
+  .title {
+    font-size: 36rpx;
+    font-weight: bold;
+    margin-bottom: 20rpx;
+    text-align: center;
+    color: #333333;
+  }
+  
+  .text {
+    font-size: 28rpx;
+    color: #666666;
+    margin-bottom: 40rpx;
+    text-align: center;
+  }
+  
+  .qrcode-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 26rpx 0;
+    box-shadow: 0px 6rpx 10rpx rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+    border-radius: 16rpx;
+  }
+  
+  .qrcode-image {
+    width: 360rpx;
+    height: 360rpx;
+    border-radius: 16rpx;
+  }

@@ -1,0 +1,79 @@
+/*宗旨 */
+.img-wrapper{
+    background-color:  #fff9ef
+    
+}
+.image-wrapper{
+    border-radius: 25px;
+    overflow: hidden;
+    
+}
+/*发布任务 */
+.pub-wrapper{
+    background-color: #fff9ef;
+
+}
+.image-wrapper-publish{
+    position:relative;
+    height: 160px;
+    width: 100%;
+}
+.image-publish {
+    width: 100%;
+    height:90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+/*四个图标 */
+.icon-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 143px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.icon{
+    float: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff9ef;
+    text-align: center;
+    font-size: 12px;
+    padding: 18px;
+}
+.icon image{
+    width:20px;
+    height: 20px;
+}
+.icon text{
+    font-size: 15px;
+   height: 12px;
+   font-style: normal;
+}
+
+.image-wrapper-show{
+    position: relative;
+    height: 140px;
+}
+.image-show{
+    width: 100%;
+    height:100%;
+}
+.text-show{
+    font-size: 24px;
+    top: 50%;
+    left: 50%; 
+    position: absolute;
+     transform: translate(-50%, -50%);
+     color: #ffffff;
+}
+
+

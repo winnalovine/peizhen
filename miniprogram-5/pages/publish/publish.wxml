@@ -1,0 +1,83 @@
+<van-form>
+<van-cell label="性别" class="gender-cell">
+  <van-radio-group value="{{ radio }}" bind:change="onChange" >
+    <view class="gender-option">
+      <van-radio name="1" class="s">男</van-radio>
+      <van-radio name="2">女</van-radio>
+    </view>
+  </van-radio-group>
+</van-cell>
+
+  <van-field
+    value="{{ age }}"
+    required
+    clearable
+    label="年龄"
+    placeholder="请输入年龄"
+    bind:click-icon="onClickIcon"
+  />
+
+  
+
+
+<van-field
+  value="{{ fieldValue }}"
+  is-link
+  readonly
+  label="居住地"
+  placeholder="请选择所在地区"
+  bind:tap="onClick"
+/>
+<van-popup show="{{ fieldshow }}" round position="bottom">
+  <van-cascader
+    wx:if="{{ fieldshow }}"
+    value="{{ cascaderValue }}"
+    title="请选择所在地区"
+    options="{{ options }}"
+    bind:close="onClose"
+    bind:finish="onFinish"
+  />
+</van-popup>
+<van-cell title="日期" value="{{ date }}" bind:click="onDisplay"  />
+<van-calendar show="{{ dateshow }}" bind:close="onClose" bind:confirm="onConfirm" />
+<van-cell-group>
+  <van-field
+    value="{{ message }}"
+    label="病史"
+    type="textarea"
+    placeholder="请填写病史"
+    autosize
+    border="{{ false }}"
+  />
+</van-cell-group>
+<van-field
+    value="{{ hospital }}"
+    required
+    clearable
+    label="医院"
+    placeholder="请输入将要去的医院名称"
+    bind:click-icon="onClickIcon"
+  />
+
+<van-field
+    value="{{ telephone }}"
+    label="手机号"
+    placeholder="请输入手机号码"
+    required
+    clearable
+    border="{{ false }}"
+  />
+  <van-field
+    value="{{ ohhh_telephone }}"
+    label="紧急联系人手机号"
+    placeholder="请输入紧急联系人手机号码"
+    required
+    clearable
+    border="{{ false }}"
+  />
+  <view style="display: flex; justify-content: flex-end;">
+    <van-button   color="#F5E27F" size="normal"class="custom-button" bind:tap="submitForm">提交</van-button>
+</view>
+</van-form>
+
+

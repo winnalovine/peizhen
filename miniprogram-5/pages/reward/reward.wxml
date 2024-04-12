@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="title">感谢您的支持！</view>
+  <view class="text">请使用微信扫一扫扫描下方二维码完成支付</view>
+  <view class="qrcode-image-wrapper">
+    <image class="qrcode-image" src="../../image/reward/收款码.png"></image>
+  </view>
+</view>

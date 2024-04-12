@@ -1,0 +1,31 @@
+.container {
+    margin: 20px;
+    margin-top: 0px;
+  }
+  
+  .item {
+    margin-bottom: 20px;
+  }
+  
+  .info-container {
+    border: 1px solid rgb(170, 51, 51);
+    background-color: papayawhip;
+    padding: 10px;
+    height: 120px;
+    width: 250px;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .label {
+    font-weight: bold;
+    width: 80px;
+  }
+  
+  .value {
+    flex: 1;
+  }

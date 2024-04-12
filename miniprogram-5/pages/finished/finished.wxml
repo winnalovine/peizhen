@@ -1,0 +1,19 @@
+<view class="container">
+
+  <view wx:for="{{volunteers}}" wx:key="index" class="item">
+    <view class="info-container">
+      <view class="info-item">
+        <view class="label">时间：</view>
+        <view class="value">{{item.time}}</view>
+      </view>
+      <view class="info-item">
+        <view class="label">医院：</view>
+        <view class="value">{{item.hospital}}</view>
+      </view>
+      <view class="info-item">
+        <view class="label">志愿者：</view>
+        <view class="value">{{item.volunteerName}}</view>
+      </view>
+    </view>
+  </view>
+</view>

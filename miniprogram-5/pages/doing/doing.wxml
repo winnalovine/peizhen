@@ -1,0 +1,56 @@
+<van-form>
+<van-cell-group>
+  <van-field
+    value="{{ message }}"
+    label="时间"
+    type="textarea"
+   
+    autosize
+    border="{{ false }}"
+  />
+  <van-field
+    value="{{ message }}"
+    label="今日日期"
+    type="textarea"
+   
+    autosize
+    border="{{ false }}"
+  />
+  <van-field
+    value="{{ message }}"
+    label="距离天数"
+    type="textarea"
+   
+    autosize
+    border="{{ false }}"
+  />
+  <van-field
+    value="{{ hospital }}"
+    
+    clearable
+    label="医院"
+   
+    bind:click-icon="onClickIcon"
+  />
+
+<van-field
+    value="{{ telephone }}"
+    label="志愿者手机号"
+   
+   
+    clearable
+    border="{{ false }}"
+  />
+  <van-field
+    value="{{ ohhh_telephone }}"
+    label="紧急联系人手机号"
+    
+   
+    clearable
+    border="{{ false }}"
+  />
+</van-cell-group>
+</van-form>
+
+
+<image src="../../image/doing/picture1.png" />

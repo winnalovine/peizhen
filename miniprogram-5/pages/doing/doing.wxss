@@ -1,0 +1,10 @@
+.gender-cell .van-cell__label {
+    font-size: 14px;
+    color: #333;
+  }
+
+  .gender-option {
+    display: flex;
+    justify-content: space-between;
+  }
+ 

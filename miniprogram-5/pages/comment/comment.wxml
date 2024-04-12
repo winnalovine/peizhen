@@ -1,0 +1,25 @@
+<view class="container">
+  <view class="section">
+    <text class="label">请给出对平台的评分：</text>
+    <van-rate class="rate" value="{{ platformRating }}" bind:change="onPlatformRateChange" />
+  </view>
+
+  <view class="section">
+    <text class="label">请给出对志愿者的评分：</text>
+    <van-rate class="rate" value="{{ volunteerRating }}" bind:change="onVolunteerRateChange" />
+  </view>
+
+  <view class="section">
+    <text class="label">请填写评价内容：</text>
+    <textarea class="textarea" placeholder="请输入评价内容"></textarea>
+  </view>
+
+  <view class="section">
+    <text class="label">请添加图片佐证：</text>
+    <view class="image-picker">
+      <van-uploader class="uploader" file-list="{{ fileList }}" bind:after-read="afterRead" />
+    </view>
+  </view>
+
+  <button class="submit-button" bindtap="submitEvaluation">提交评价</button>
+</view>

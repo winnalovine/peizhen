@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="title">意见反馈</view>
+  <view class="form">
+    <view class="form-item">
+      <view class="item-label">反馈类型</view>
+      <picker value="{{feedbackTypeIndex}}" range="{{feedbackType}}" bindchange="pickerChange">
+        <view class="picker">
+          {{feedbackType[feedbackTypeIndex]}}
+        </view>
+      </picker>
+    </view>
+    <view class="form-item">
+      <view class="item-label">联系方式</view>
+      <input type="text" placeholder="手机号/邮箱" bindinput="inputChange"></input>
+    </view>
+    <view class="form-item">
+      <view class="item-label">反馈内容</view>
+      <textarea placeholder="请输入反馈内容" bindinput="inputChange"></textarea>
+    </view>
+    <button class="submit-btn" disabled="{{!submitButtonEnabled}}">提交反馈</button>
+  </view>
+</view>

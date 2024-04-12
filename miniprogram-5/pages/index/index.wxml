@@ -1,0 +1,75 @@
+<import src="../../template/tabbar.wxml"/> 
+
+<view class="img-wrapper">
+<view class="image-wrapper">
+ <swiper indicator-dots="{{true}}" autoplay="true" interval="200000" indicator-color="rgba(255, 255, 255, 0.5)" indicator-active-color="rgba(255, 255, 255, 1)">
+  <swiper-item>
+    <image src="../../image/index/宗旨.png" mode="aspectFill" style="width: 100%; height: 100%;"></image>
+  </swiper-item>
+</swiper>
+</view>
+
+<view class="pub-wrapper">
+<navigator  url="/pages/publish/publish"> 
+  <view class="image-wrapper-publish" >
+    <image class="image-publish" src="../../image/index/发布任务.png" mode="aspectFill"/>
+  </view>
+</navigator>
+</view>
+
+
+<view class="icon-container">
+    <view class="row">
+  <navigator url="/pages/publish/publish" hover-class="navigator-hover" class="icon">
+    <image src="../../image/index/草稿箱.png" class="icon-image" />
+    <text class="icon-text">草稿箱</text>
+  </navigator>
+  <navigator url="/pages/doing/doing" hover-class="navigator-hover" class="icon">
+    <image src="../../image/index/进行中.png" class="icon-image" />
+    <text class="icon-text">进行中</text>
+  </navigator>
+  <navigator url="/pages/finished/finished" hover-class="navigator-hover" class="icon">
+    <image src="../../image/index/已完成.png" class="icon-image" />
+    <text class="icon-text">已完成</text>
+  </navigator>
+  <navigator url="/pages/comment/comment" hover-class="navigator-hover" class="icon">
+    <image src="../../image/index/评价.png" class="icon-image" />
+    <text class="icon-text">评价</text>
+  </navigator>
+</view>
+
+<view class="row">
+  <view class="icon">
+    <image src="../../image/index/志愿者.png" class="icon-image" />
+    <text  bindtap='tologs' class="icon-text">志愿者</text>
+  </view>
+  <navigator url="/pages/reward/reward" hover-class="navigator-hover" class="icon">
+    <image src="../../image/index/打赏.png" class="icon-image" />
+    <text class="icon-text">去打赏</text>
+  </navigator>
+  <navigator url="/pages/feedback/feedback" hover-class="navigator-hover" class="icon">
+    <image src="../../image/index/客服.png" class="icon-image" />
+    <text class="icon-text">去反馈</text>
+  </navigator>
+  <navigator url="/pages/setting/setting" hover-class="navigator-hover" class="icon">
+    <image src="../../image/index/设置.png" class="icon-image" />
+    <text class="icon-text">设置</text>
+  </navigator>
+</view>
+
+
+</view>
+
+
+
+
+
+
+
+
+
+<template is="tabBar" data="{{tabBar}}"/>
+</view>
+
+
+ 

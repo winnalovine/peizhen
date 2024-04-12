@@ -1,0 +1,44 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/old_me/old_me",
+        "pages/publish/publish",
+        "pages/show/show",
+        "pages/doing/doing",
+        "pages/finished/finished",
+        "pages/comment/comment",
+        "pages/reward/reward",
+        "pages/feedback/feedback",
+        "pages/setting/setting"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#FFFFFF",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarTextStyle": "black"
+    },
+    "sitemapLocation": "sitemap.json",
+    "usingComponents": {
+        "van-button": "@vant/weapp/button/index",
+        "van-config-provider": "@vant/weapp/config-provider/index",
+        "van-row": "@vant/weapp/row/index",
+        "van-col": "@vant/weapp/col/index",
+        "van-icon": "@vant/weapp/icon/index",
+        "van-radio": "@vant/weapp/radio/index",
+        "van-radio-group": "@vant/weapp/radio-group/index",
+        "van-field": "@vant/weapp/field/index",
+        "van-cell": "@vant/weapp/cell/index",
+        "van-cell-group": "@vant/weapp/cell-group/index",
+        "van-calendar": "@vant/weapp/calendar/index",
+        "van-cascader": "@vant/weapp/cascader/index",
+        "van-rate": "@vant/weapp/rate/index",
+        "van-uploader": "@vant/weapp/uploader/index",
+        "van-card": "@vant/weapp/card/index",
+        "van-search": "@vant/weapp/search/index",
+        "van-tag": "@vant/weapp/tag/index"
+        
+          
+    }
+}
+

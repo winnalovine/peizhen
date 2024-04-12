@@ -1,0 +1,62 @@
+<view class="search-container">
+  <van-search value="{{ value }}" placeholder="请输入搜索关键词" />
+</view>
+
+<view class="icon-row">
+  <view class="nav-item">
+    <image src="../../image/logs/老人端.png" class="nav-icon" />
+    <text class="nav-text">老人端</text>
+  </view>
+  <view class="nav-item">
+    <image src="../../image/logs/本地.png" class="nav-icon" />
+    <text class="nav-text">本地</text>
+  </view>
+  <view class="nav-item">
+    <image src="../../image/logs/近期.png" class="nav-icon" />
+    <text class="nav-text">近期</text>
+  </view>
+  <view class="nav-item">
+    <image src="../../image/logs/指引.png" class="nav-icon" />
+    <text class="nav-text">指引</text>
+  </view>
+</view>
+
+
+<view class="page-header">
+
+  <view class="header-title">全部志愿活动</view>
+
+  <van-dropdown-menu class="custom-dropdown-menu">
+  <van-dropdown-item class="custom-dropdown-item" value="option1">
+    <van-icon class="custom-icon" name="friends-o "/>
+    性别
+  </van-dropdown-item>
+  <van-dropdown-item class="custom-dropdown-item" value="option2">
+    <van-icon class="custom-icon" name="location-o" />
+    地区
+  </van-dropdown-item>
+  <van-dropdown-item class="custom-dropdown-item" value="option3">
+    <van-icon class="custom-icon" name="clock-o" />
+    年龄
+  </van-dropdown-item>
+</van-dropdown-menu>
+</view>
+
+<view class="container">
+  <van-card
+    wx:for="{{ tasks }}"
+    wx:key="index"
+    title="{{ item.title }}"
+    desc="{{ item.desc }}"
+    tag="{{ item.location}}"
+    num="2"
+    bind:click="goToDetail"
+    class="card"
+  > 
+    <view slot="footer" class="card-footer">
+      <van-button size="mini" class="help-button">帮助</van-button>
+    </view>
+  </van-card>
+</view>
+
+
